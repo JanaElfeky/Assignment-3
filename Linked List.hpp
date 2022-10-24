@@ -23,7 +23,7 @@ class LinkedList{
     node *head;
 public:
     LinkedList();
-    void insert(int data);
+    void insert(node* Head,int data);
     void removeFromEnd();
     void removeFromMiddle(int previousNodeValue);
     void print();
