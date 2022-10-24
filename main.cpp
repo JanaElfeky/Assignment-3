@@ -24,8 +24,11 @@ int main(int argc, const char * argv[]) {
         cin >> userData; //user enters each value
         userVector.push_back(userData); //inputting each value in the vector
     }
+    
     list=list.create(userVector); //inputting the vector elements in the linked list
     list.print(); //printing the linked list elements before manipulation
+    insertAfter(list, 4, 6);
+    list.print(); //printing after manipulation
     cout << "the sum of the elements is: " << list.sum() << endl; //output the sum of the values in the linked list
     return 0;
 }
